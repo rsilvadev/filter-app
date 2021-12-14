@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/filter-app/static/css/main.b4d6dd6b.css",
+    "main.js": "/filter-app/static/js/main.366d90ea.js",
+    "index.html": "/filter-app/index.html",
+    "main.b4d6dd6b.css.map": "/filter-app/static/css/main.b4d6dd6b.css.map",
+    "main.366d90ea.js.map": "/filter-app/static/js/main.366d90ea.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b4d6dd6b.css",
+    "static/js/main.366d90ea.js"
+  ]
+}
