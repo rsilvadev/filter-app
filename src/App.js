@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from "react";
-import "./App.css";
+import "./App.scss";
 
 const App = () => {
   const [data, setData] = useState(null);
@@ -19,6 +19,10 @@ const App = () => {
   const [isCompleted, setIsCompleted] = useState(null);
   const [darkMode, setDarkMode] = useState(true);
   const filterIconRef = useRef(null);
+
+  const selectRandomIconName = () => {
+    return iconNames[Math.floor(Math.random() * 8)];
+  };
 
   useEffect(() => {
     fetch("https://jsonplaceholder.typicode.com/todos")
@@ -46,10 +50,6 @@ const App = () => {
       }
     }
   }, [showFilters, darkMode]);
-
-  const selectRandomIconName = () => {
-    return iconNames[Math.floor(Math.random() * 8)];
-  };
 
   return (
     <div className={`${darkMode ? "bg-dark" : "bg-white"}`}>

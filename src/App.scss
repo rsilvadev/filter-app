@@ -11,18 +11,22 @@
   cursor: pointer;
   transition: 0.4s;
   border-radius: 8px;
-}
 
-.item-container:hover {
-  transform: translateY(-8px);
-}
+  &:hover {
+    transform: translateY(-8px);
 
-.item-content i {
-  transition: 0.4s;
-}
+    .item-content {
+			i {
+				transform: rotate(-10deg);
+      }
+    }
+  }
 
-.item-container:hover .item-content i {
-  transform: rotate(-10deg);
+  .item-content {
+		i {
+			transition: 0.4s;
+		}
+  }
 }
 
 .theme-mode-icon {
